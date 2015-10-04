@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<!---CSS Style--->
+
 <link rel="stylesheet" type="text/css" href="VRNYCstylesheet.css">
-<!---Fonts--->
+
 <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-<!---External Stylesheets--->
+
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 
 <script>
@@ -59,22 +59,17 @@ function showInput() {
   </head>
  <body>
 
-<form>
-  <p>
-  <label><b>Your Full Name</b></label></p>
-  <p>
-    <input type="text" name="message" id="user_input">
-  </p>
-  <p>
-    <label><b>Email Address</b></label>
-    </p>
-  <p>
-    <input type="text" name="message" id="user_email">
-    <label><b><br />
-      Your Request</b></label></p>
-  <p>
-    <textarea name="message" cols="50" id="user_story"></textarea>
-  </p>
+<form method="POST" action="/confirm" class="form">    
+	<label>Name</label>
+	<textarea name="user_name"></textarea>
+	<br />
+	<label>Email</label>
+	<textarea name="user_email"></textarea>
+	<br />
+	<label>Message</label>
+	<textarea name="user_message"></textarea>
+	<br />
+    <button type="submit" href="contact">Submit</button>
 </form>
 <p>
   <input class="buttongohalfsection" type="submit" onclick="showInput();">
@@ -99,7 +94,6 @@ function showInput() {
 		<p>Learn more about the contributors of this site.</p>
         <div class="buttongohalfsection"><a href="aboutus.html">Read On</a></div>
 </div>
-
 <div class="halfsection2">
 	<h1>Contact</h1>
 		<p>Learn how to submit your story to Subway Chronicles.</p>
@@ -107,4 +101,4 @@ function showInput() {
 </div>
 
 </body>
-</html>
+</html> -->
